@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
         radioButtonHelium.setOnClickListener(radio_listener);
 
     }
-
+    // Button Clear
     public void limparBotoes(View view) {
         nao_declarado_pressao.toggle();
         nao_declarado_mangueira.toggle();
