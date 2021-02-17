@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/engine4"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="212dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_4"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/engine3" />
+
+    <TextView
+        android:id="@+id/engine6"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="180dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_6"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/engine5" />
+
+    <TextView
+        android:id="@+id/engine3"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginRight="79dp"
+        android:layout_marginBottom="212dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_3"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/engine5"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginRight="79dp"
+        android:layout_marginBottom="180dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_5"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/engine2"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="244dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_2"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/engine1" />
+
+    <TextView
+        android:id="@+id/engine1"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginRight="79dp"
+        android:layout_marginBottom="244dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_1"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/pressao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/nao_declarado_pressao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/_not_declared_pressao"
+            android:textSize="18sp"
+            android:buttonTint="@color/radio_buttons"
+            tools:targetApi="lollipop" />
+
+        <RadioButton
+            android:id="@+id/menor_que"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/_5812"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="136dp"
+            android:buttonTint="@color/radio_buttons"
+            tools:targetApi="lollipop" />
+
+        <RadioButton
+            android:id="@+id/maior_que"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/_5783"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="184dp"
+            android:buttonTint="@color/radio_buttons"
+            tools:targetApi="lollipop" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/mangueiras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toEndOf="@+id/pressao"
+        app:layout_constraintTop_toTopOf="@+id/pressao">
+
+        <RadioButton
+            android:id="@+id/nao_declarado_mangueira"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/_not_declared_pressao"
+            android:textSize="18sp"
+            android:buttonTint="@color/radio_buttons"
+            tools:targetApi="lollipop" />
+
+        <RadioButton
+            android:id="@+id/hydrogen1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/_1_x_h"
+            android:textSize="24sp"
+            android:buttonTint="@color/radio_buttons"
+            tools:targetApi="lollipop" />
+
+        <RadioButton
+            android:id="@+id/hydrogen2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/_2_x_h"
+            android:textSize="24sp"
+            android:buttonTint="@color/radio_buttons"
+            tools:targetApi="lollipop" />
+
+        <RadioButton
+            android:id="@+id/hydrogen3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/_3_x_h"
+            android:textSize="24sp"
+            android:buttonTint="@color/radio_buttons"
+            tools:targetApi="lollipop" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/gas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mangueiras"
+        app:layout_constraintTop_toTopOf="@+id/mangueiras">
+
+        <RadioButton
+            android:id="@+id/nao_declarado_gas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/_not_declared_pressao"
+            android:textSize="18sp"
+            android:buttonTint="@color/radio_buttons"
+            tools:targetApi="lollipop" />
+
+        <RadioButton
+            android:id="@+id/nitrogen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/nitrogen"
+            android:textSize="24sp"
+            android:buttonTint="@color/radio_buttons"
+            tools:targetApi="lollipop" />
+
+        <RadioButton
+            android:id="@+id/deterium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/deterium"
+            android:textSize="24sp"
+            android:buttonTint="@color/radio_buttons"
+            tools:targetApi="lollipop" />
+
+        <RadioButton
+            android:id="@+id/helium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/helium"
+            android:textSize="24sp"
+            android:buttonTint="@color/radio_buttons"
+            tools:targetApi="lollipop" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/clear"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="116dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="limparBotoes"
+        android:text="@string/clear"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/door"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/door"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/stairs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/stairs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/stairs"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/board"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/whiteboard"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/engine12"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="244dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_12"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/engine9"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="212dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_9"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/engine10" />
+
+    <TextView
+        android:id="@+id/engine11"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="180dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_11"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/engine8" />
+
+    <TextView
+        android:id="@+id/engine7"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="244dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_7"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/engine12" />
+
+    <TextView
+        android:id="@+id/engine10"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="212dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_10"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/engine8"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginBottom="180dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/_8"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="412dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_top"
+        android:contentDescription="@string/logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

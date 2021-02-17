@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Payday 2 Big Oil Calculator</string>
+    <string name="payday_2_big_oil_calculator">Payday 2 Big Oil Calculator</string>
+    <string name="_5812"><![CDATA[<5812]]></string>
+    <string name="_5783"><![CDATA[>5783]]></string>
+    <string name="h">H</string>
+    <string name="_2_x_h">2 x H</string>
+    <string name="_3_x_h">3 x H</string>
+    <string name="_1_x_h">1 x H</string>
+    <string name="nitrogen">Nitrogen</string>
+    <string name="helium">Helium</string>
+    <string name="deterium">Deterium</string>
+    <string name="_not_declared_pressao">\???</string>
+    <string name="clear">CLEAR</string>
+    <string name="door">Door</string>
+    <string name="stairs">Stairs</string>
+    <string name="_12">#12</string>
+    <string name="calculate">Calculate</string>
+    <string name="_10">#10</string>
+    <string name="_8">#8</string>
+    <string name="_9">#9</string>
+    <string name="_11">#11</string>
+    <string name="_7">#7</string>
+    <string name="_4">#4</string>
+    <string name="_6">#6</string>
+    <string name="_3">#3</string>
+    <string name="_5">#5</string>
+    <string name="_1">#1</string>
+    <string name="_2">#2</string>
+    <string name="whiteboard">Whiteboard</string>
+    <string name="logo">logo</string>
+</resources>
