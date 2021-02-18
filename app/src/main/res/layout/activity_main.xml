@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_dark"
+    android:background="@color/Dark"
     tools:context=".MainActivity">
 
     <TextView
@@ -16,7 +16,7 @@
         android:layout_marginBottom="212dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/_4"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/engine3" />
@@ -30,7 +30,7 @@
         android:layout_marginBottom="180dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/_6"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/engine5" />
@@ -39,12 +39,12 @@
         android:id="@+id/engine3"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
-        android:layout_marginEnd="79dp"
-        android:layout_marginRight="79dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
         android:layout_marginBottom="212dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/_3"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -53,12 +53,12 @@
         android:id="@+id/engine5"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
-        android:layout_marginEnd="79dp"
-        android:layout_marginRight="79dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
         android:layout_marginBottom="180dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/_5"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -72,7 +72,7 @@
         android:layout_marginBottom="244dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/_2"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/engine1" />
@@ -81,12 +81,12 @@
         android:id="@+id/engine1"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
-        android:layout_marginEnd="79dp"
-        android:layout_marginRight="79dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
         android:layout_marginBottom="244dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/_1"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -95,9 +95,9 @@
         android:id="@+id/pressao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -105,35 +105,38 @@
             android:id="@+id/nao_declarado_pressao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/radio_buttons"
             android:checked="true"
             android:fontFamily="sans-serif-medium"
             android:text="@string/_not_declared_pressao"
+            android:textColor="@color/white"
             android:textSize="18sp"
-            android:buttonTint="@color/radio_buttons"
             tools:targetApi="lollipop" />
 
         <RadioButton
             android:id="@+id/menor_que"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/radio_buttons"
             android:fontFamily="sans-serif-medium"
             android:text="@string/_5812"
+            android:textColor="@color/white"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="136dp"
-            android:buttonTint="@color/radio_buttons"
             tools:targetApi="lollipop" />
 
         <RadioButton
             android:id="@+id/maior_que"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/radio_buttons"
             android:fontFamily="sans-serif-medium"
             android:text="@string/_5783"
+            android:textColor="@color/white"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="184dp"
-            android:buttonTint="@color/radio_buttons"
             tools:targetApi="lollipop" />
     </RadioGroup>
 
@@ -150,41 +153,45 @@
             android:id="@+id/nao_declarado_mangueira"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/radio_buttons"
             android:checked="true"
             android:fontFamily="sans-serif-medium"
             android:text="@string/_not_declared_pressao"
+            android:textColor="@color/white"
             android:textSize="18sp"
-            android:buttonTint="@color/radio_buttons"
             tools:targetApi="lollipop" />
 
         <RadioButton
             android:id="@+id/hydrogen1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/radio_buttons"
             android:fontFamily="sans-serif-medium"
             android:text="@string/_1_x_h"
+            android:textColor="@color/white"
             android:textSize="24sp"
-            android:buttonTint="@color/radio_buttons"
             tools:targetApi="lollipop" />
 
         <RadioButton
             android:id="@+id/hydrogen2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/radio_buttons"
             android:fontFamily="sans-serif-medium"
             android:text="@string/_2_x_h"
+            android:textColor="@color/white"
             android:textSize="24sp"
-            android:buttonTint="@color/radio_buttons"
             tools:targetApi="lollipop" />
 
         <RadioButton
             android:id="@+id/hydrogen3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/radio_buttons"
             android:fontFamily="sans-serif-medium"
             android:text="@string/_3_x_h"
+            android:textColor="@color/white"
             android:textSize="24sp"
-            android:buttonTint="@color/radio_buttons"
             tools:targetApi="lollipop" />
     </RadioGroup>
 
@@ -192,12 +199,9 @@
         android:id="@+id/gas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="1dp"
-        android:layout_marginEnd="46dp"
-        android:layout_marginRight="46dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/mangueiras"
         app:layout_constraintTop_toTopOf="@+id/mangueiras">
 
@@ -205,41 +209,45 @@
             android:id="@+id/nao_declarado_gas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/radio_buttons"
             android:checked="true"
             android:fontFamily="sans-serif-medium"
             android:text="@string/_not_declared_pressao"
+            android:textColor="@color/white"
             android:textSize="18sp"
-            android:buttonTint="@color/radio_buttons"
             tools:targetApi="lollipop" />
 
         <RadioButton
             android:id="@+id/nitrogen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/radio_buttons"
             android:fontFamily="sans-serif-medium"
             android:text="@string/nitrogen"
+            android:textColor="@color/white"
             android:textSize="24sp"
-            android:buttonTint="@color/radio_buttons"
             tools:targetApi="lollipop" />
 
         <RadioButton
             android:id="@+id/deterium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/radio_buttons"
             android:fontFamily="sans-serif-medium"
             android:text="@string/deterium"
+            android:textColor="@color/white"
             android:textSize="24sp"
-            android:buttonTint="@color/radio_buttons"
             tools:targetApi="lollipop" />
 
         <RadioButton
             android:id="@+id/helium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/radio_buttons"
             android:fontFamily="sans-serif-medium"
             android:text="@string/helium"
+            android:textColor="@color/white"
             android:textSize="24sp"
-            android:buttonTint="@color/radio_buttons"
             tools:targetApi="lollipop" />
 
     </RadioGroup>
@@ -269,6 +277,7 @@
         android:layout_marginBottom="40dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/door"
+        android:textColor="@color/white_grey"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/stairs"
         app:layout_constraintEnd_toEndOf="parent"
@@ -282,6 +291,7 @@
         android:layout_marginBottom="45dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/stairs"
+        android:textColor="@color/white_grey"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/board"
         app:layout_constraintEnd_toEndOf="parent"
@@ -295,6 +305,7 @@
         android:layout_marginBottom="70dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/whiteboard"
+        android:textColor="@color/white_grey"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/clear"
         app:layout_constraintEnd_toEndOf="parent"
@@ -310,7 +321,7 @@
         android:layout_marginBottom="244dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/_12"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -324,7 +335,7 @@
         android:layout_marginBottom="212dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/_9"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/engine10" />
@@ -338,7 +349,7 @@
         android:layout_marginBottom="180dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/_11"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/engine8" />
@@ -352,7 +363,7 @@
         android:layout_marginBottom="244dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/_7"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/engine12" />
@@ -366,7 +377,7 @@
         android:layout_marginBottom="212dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/_10"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -380,7 +391,7 @@
         android:layout_marginBottom="180dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/_8"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -390,11 +401,11 @@
         android:layout_width="412dp"
         android:layout_height="68dp"
         android:layout_marginTop="20dp"
+        android:contentDescription="@string/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_top"
-        android:contentDescription="@string/logo" />
+        app:srcCompat="@drawable/logo_top" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

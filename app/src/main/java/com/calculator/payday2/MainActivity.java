@@ -135,19 +135,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void limparEngines(){
-        engine12.setTextColor(Color.BLACK);
-        engine10.setTextColor(Color.BLACK);
-        engine8.setTextColor(Color.BLACK);
-        engine7.setTextColor(Color.BLACK);
-        engine9.setTextColor(Color.BLACK);
-        engine11.setTextColor(Color.BLACK);
+        engine12.setTextColor(Color.WHITE);
+        engine10.setTextColor(Color.WHITE);
+        engine8.setTextColor(Color.WHITE);
+        engine7.setTextColor(Color.WHITE);
+        engine9.setTextColor(Color.WHITE);
+        engine11.setTextColor(Color.WHITE);
 
-        engine2.setTextColor(Color.BLACK);
-        engine4.setTextColor(Color.BLACK);
-        engine6.setTextColor(Color.BLACK);
-        engine1.setTextColor(Color.BLACK);
-        engine3.setTextColor(Color.BLACK);
-        engine5.setTextColor(Color.BLACK);
+        engine2.setTextColor(Color.WHITE);
+        engine4.setTextColor(Color.WHITE);
+        engine6.setTextColor(Color.WHITE);
+        engine3.setTextColor(Color.WHITE);
+        engine5.setTextColor(Color.WHITE);
+        engine1.setTextColor(Color.WHITE);
     }
 
     View.OnClickListener radio_listener = new View.OnClickListener() {

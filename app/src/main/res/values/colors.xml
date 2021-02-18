@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="payday_the_heist">#FCE601</color>
     <color name="radio_buttons">#FFFFFF</color>
+    <color name="Dark">#252525</color>
+    <color name="white_grey">#6F6F6F</color>
 </resources>
