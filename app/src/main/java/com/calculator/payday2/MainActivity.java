@@ -155,67 +155,117 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             limparEngines();
 
+            if (maior_que.isChecked()){
+                if(hydrogen3.isChecked()){
+                    if(deterium.isChecked()){
+                        engine12.setTextColor(Color.RED); // #12
+                    }else if(nitrogen.isChecked()){
+                        engine11.setTextColor(Color.RED); // #11
+                    }else if(helium.isChecked()){
+                        engine10.setTextColor(Color.RED); // #10
+                    }
+                }else if(hydrogen2.isChecked()){
+                    if(nitrogen.isChecked()){
+                        engine9.setTextColor(Color.RED); // #9
+                    }else if(nitrogen.isChecked()){
+                        engine8.setTextColor(Color.RED); // #8
+                    }else if(helium.isChecked()){
+                        engine10.setTextColor(Color.RED); // #10
+                        engine7.setTextColor(Color.RED); // #7
+                    }
+                }else if(hydrogen1.isChecked()){
+                    if(deterium.isChecked()){
+                        engine2.setTextColor(Color.RED); // #2
+                    }
+                }
+            }
+            else{
+                if(hydrogen3.isChecked()){
+                    if(deterium.isChecked()){
+                        engine9.setTextColor(Color.RED); // #9
+                    }else if(nitrogen.isChecked()){
+                        engine8.setTextColor(Color.RED); // #8
+                    }else if(helium.isChecked()){
+                        engine10.setTextColor(Color.RED); // #10
+                        engine7.setTextColor(Color.RED); // #7
+                    }
+                }else if(hydrogen2.isChecked()){
+                    if(nitrogen.isChecked()){
+                        engine4.setTextColor(Color.RED); // #4
+                    }else if(deterium.isChecked()){
+                        engine5.setTextColor(Color.RED); // #5
+                    }else if(helium.isChecked()){
+                        engine3.setTextColor(Color.RED); // #3
+                    }
+                }else if(hydrogen1.isChecked()){
+                    if(nitrogen.isChecked()){
+                        engine1.setTextColor(Color.RED); // #1
+                    }
+                }
+            }
+
             // 3 x Hoses Combinations
-            if (maior_que.isChecked() && hydrogen3.isChecked() && deterium.isChecked()) {
-                engine12.setTextColor(Color.RED); // #12
+            // if (maior_que.isChecked() && hydrogen3.isChecked() && deterium.isChecked()) {
+            //     engine12.setTextColor(Color.RED); // #12
 
-            }else if(maior_que.isChecked() && hydrogen3.isChecked() && nitrogen.isChecked()){
-                engine11.setTextColor(Color.RED); // #11
+            // }else if(maior_que.isChecked() && hydrogen3.isChecked() && nitrogen.isChecked()){
+            //     engine11.setTextColor(Color.RED); // #11
 
-            }else if(maior_que.isChecked() && hydrogen3.isChecked() && helium.isChecked()) {
-                engine10.setTextColor(Color.RED); // #10
+            // }else if(maior_que.isChecked() && hydrogen3.isChecked() && helium.isChecked()) {
+            //     engine10.setTextColor(Color.RED); // #10
 
-            } else if (menor_que.isChecked() && hydrogen3.isChecked() && deterium.isChecked()){
-                engine9.setTextColor(Color.RED); // #9
+            // }
+            // else if (menor_que.isChecked() && hydrogen3.isChecked() && deterium.isChecked()){
+            //     engine9.setTextColor(Color.RED); // #9
 
-            }else if(menor_que.isChecked() && hydrogen3.isChecked() && nitrogen.isChecked()){
-                engine8.setTextColor(Color.RED); // #8
+            // }else if(menor_que.isChecked() && hydrogen3.isChecked() && nitrogen.isChecked()){
+            //     engine8.setTextColor(Color.RED); // #8
 
-            }else if(menor_que.isChecked() && hydrogen3.isChecked() && helium.isChecked()){
-                engine10.setTextColor(Color.RED); // #10
-                engine7.setTextColor(Color.RED); // #7
-            }
+            // }else if(menor_que.isChecked() && hydrogen3.isChecked() && helium.isChecked()){
+            //     engine10.setTextColor(Color.RED); // #10
+            //     engine7.setTextColor(Color.RED); // #7
+            // }
+            // // 2 x Hoses Combinations
+            // else if(maior_que.isChecked() && hydrogen2.isChecked() && nitrogen.isChecked()){
+            //     engine4.setTextColor(Color.RED); // #4
 
-            // 2 x Hoses Combinations
-            else if(maior_que.isChecked() && hydrogen2.isChecked() && nitrogen.isChecked()){
-                engine4.setTextColor(Color.RED); // #4
+            // }else if(maior_que.isChecked() && hydrogen2.isChecked() && deterium.isChecked()){
+            //     // Nenhum
 
-            }else if(maior_que.isChecked() && hydrogen2.isChecked() && deterium.isChecked()){
-                // Nenhum
+            // }else if(maior_que.isChecked() && hydrogen2.isChecked() && helium.isChecked()){
+            //     engine3.setTextColor(Color.RED); // #3
+            //     engine6.setTextColor(Color.RED); // #6
 
-            }else if(maior_que.isChecked() && hydrogen2.isChecked() && helium.isChecked()){
-                engine3.setTextColor(Color.RED); // #3
-                engine6.setTextColor(Color.RED); // #6
+            // }
+            // else if(menor_que.isChecked() && hydrogen2.isChecked() && nitrogen.isChecked()){
+            //     engine4.setTextColor(Color.RED); // #4
 
-            }else if(menor_que.isChecked() && hydrogen2.isChecked() && nitrogen.isChecked()){
-                engine4.setTextColor(Color.RED); // #4
+            // }else if(menor_que.isChecked() && hydrogen2.isChecked() && deterium.isChecked()){
+            //     engine5.setTextColor(Color.RED); // #5
 
-            }else if(menor_que.isChecked() && hydrogen2.isChecked() && deterium.isChecked()){
-                engine5.setTextColor(Color.RED); // #5
+            // }else if(menor_que.isChecked() && hydrogen2.isChecked() && helium.isChecked()){
+            //     engine3.setTextColor(Color.RED); // #3
+            // }
+            // // 1 x Hoses Combinations
+            // else if(maior_que.isChecked() && hydrogen1.isChecked() && nitrogen.isChecked()){
+            //     // Nenhum
 
-            }else if(menor_que.isChecked() && hydrogen2.isChecked() && helium.isChecked()){
-                engine3.setTextColor(Color.RED); // #3
-            }
+            // }else if(maior_que.isChecked() && hydrogen1.isChecked() && deterium.isChecked()){
+            //     engine2.setTextColor(Color.RED); // #2
 
-            // 1 x Hoses Combinations
-            else if(maior_que.isChecked() && hydrogen1.isChecked() && nitrogen.isChecked()){
-                // Nenhum
+            // }else if(maior_que.isChecked() && hydrogen1.isChecked() && helium.isChecked()){
+            //     // Nenhum
 
-            }else if(maior_que.isChecked() && hydrogen1.isChecked() && deterium.isChecked()){
-                engine2.setTextColor(Color.RED); // #2
+            // }
+            // else if(menor_que.isChecked() && hydrogen1.isChecked() && nitrogen.isChecked()){
+            //     engine1.setTextColor(Color.RED); // #1
 
-            }else if(maior_que.isChecked() && hydrogen1.isChecked() && helium.isChecked()){
-                // Nenhum
+            // }else if(menor_que.isChecked() && hydrogen1.isChecked() && deterium.isChecked()){
+            //     // nenhum
 
-            }else if(menor_que.isChecked() && hydrogen1.isChecked() && nitrogen.isChecked()){
-                engine1.setTextColor(Color.RED); // #1
-
-            }else if(menor_que.isChecked() && hydrogen1.isChecked() && deterium.isChecked()){
-                // nenhum
-
-            }else if(menor_que.isChecked() && hydrogen1.isChecked() && helium.isChecked()){
-                // Nenhum
-            }
+            // }else if(menor_que.isChecked() && hydrogen1.isChecked() && helium.isChecked()){
+            //     // Nenhum
+            // }
         }
     };
 }
