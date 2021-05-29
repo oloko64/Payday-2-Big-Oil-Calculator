@@ -156,6 +156,7 @@ public class MainActivity extends AppCompatActivity {
             limparEngines();
 
             if (maior_que.isChecked()){
+                // 3 x Hoses Combinations
                 if(hydrogen3.isChecked()){
                     if(deterium.isChecked()){
                         engine12.setTextColor(Color.RED); // #12
@@ -165,6 +166,7 @@ public class MainActivity extends AppCompatActivity {
                         engine10.setTextColor(Color.RED); // #10
                     }
                 }else if(hydrogen2.isChecked()){
+                    // 2 x Hoses Combinations
                     if(nitrogen.isChecked()){
                         engine9.setTextColor(Color.RED); // #9
                     }else if(nitrogen.isChecked()){
@@ -174,6 +176,7 @@ public class MainActivity extends AppCompatActivity {
                         engine7.setTextColor(Color.RED); // #7
                     }
                 }else if(hydrogen1.isChecked()){
+                    // 1 x Hoses Combinations
                     if(deterium.isChecked()){
                         engine2.setTextColor(Color.RED); // #2
                     }
@@ -181,6 +184,7 @@ public class MainActivity extends AppCompatActivity {
             }
             else{
                 if(hydrogen3.isChecked()){
+                    // 3 x Hoses Combinations
                     if(deterium.isChecked()){
                         engine9.setTextColor(Color.RED); // #9
                     }else if(nitrogen.isChecked()){
@@ -190,6 +194,7 @@ public class MainActivity extends AppCompatActivity {
                         engine7.setTextColor(Color.RED); // #7
                     }
                 }else if(hydrogen2.isChecked()){
+                    // 2 x Hoses Combinations
                     if(nitrogen.isChecked()){
                         engine4.setTextColor(Color.RED); // #4
                     }else if(deterium.isChecked()){
@@ -198,6 +203,7 @@ public class MainActivity extends AppCompatActivity {
                         engine3.setTextColor(Color.RED); // #3
                     }
                 }else if(hydrogen1.isChecked()){
+                    // 1 x Hoses Combinations
                     if(nitrogen.isChecked()){
                         engine1.setTextColor(Color.RED); // #1
                     }
